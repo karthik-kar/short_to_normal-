@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input style=" top:80%; left:5%; width:40%;" type="text" id="userInput" />
+ 
+ <p id="demo">I am sample paragraph.</p>
+<button onclick="change_text()">Click me</button>
+
+  <script>
+function change_text(){
+    var input = document.getElementById("userInput").value;
+    let tiny = "https://www.youtube.com/";
+    let full_video = tiny + "watch?v=" + input.slice(31); 
+  
+    document.getElementById("demo").innerHTML = full_video
+}
+</script>
+</b>
+</html>
